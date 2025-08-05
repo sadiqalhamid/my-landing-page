@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>www.land page</title>
+    <link rel="stylesheet" href="/css/land page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <style>
+      body{
+    background-color: white;
+   margin-left: 100px;
+   margin-right: 100px;
+   font-family: Arial, Helvetica, sans-serif;
+   cursor: pointer;
+  
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.content{
+    display: flex;
+    gap: 30px;
+}
+.mana{
+    font-size: 20px;
+}
+.button{
+   background-color:#f25f3a ;
+    border: 0; 
+   border-radius: 40px;
+   color: white;
+   height: 36px;
+   width: 105px;
+   margin-top: 15px; 
+}
+.first-text{
+    display: flex;
+}
+.image img{
+    padding-left:54px;
+    padding-top: 30px; 
+    
+}
+h3{
+    font-size: 42px;
+}
+.first-text p{
+    padding-top: 3px;
+    font-size: 21px;
+}
+.button-one{
+   background-color:#f25f3a ;
+    border: 0; 
+   border-radius: 80px;
+   color: white;
+   height: 36px;
+   width: 50px;
+   cursor: pointer;
+   margin-top: 15px;  
+}
+.button-two{
+    background-color:#f25f3a ;
+    border: 0; 
+   border-radius: 80px;
+   color: white;
+   height: 36px;
+   width: 50px;
+   cursor: pointer;
+   margin-top: 15px; 
+}
+.button-three{
+    background-color:#f25f3a ;
+    border: 0; 
+   border-radius: 80px;
+   color: white;
+   height: 36px;
+    width: 50px; 
+   cursor: pointer;
+   margin-top: 15px;
+
+}
+.text-two{
+   display: flex;
+}
+.space{
+   padding-right:50px ;
+}
+.right{
+    padding-left: 300px;  
+}
+h2{
+    font-size: 30px;
+}
+ .testimonials {
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.testimonial {
+  background-color:rgb(255, 255, 255);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+.testimonial img {
+  width: 50px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.testimonial h4 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 0 5px;
+}
+
+.testimonial p {
+  font-size: 14px;
+  color: #555;
+}
+.down{
+  background-color:#f25f3a;
+  color: white;
+  padding: 30px;
+  font-size: 20px;
+  
+}
+.butt{
+  margin-left: 750px;
+  background-color: white;
+  border: none;
+  padding: 15px;
+  border-radius: 40px;
+ }
+.down-work{
+  padding-left: 900px;
+} 
+
+.main-footer {
+  background-color: #1d1e25;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px 10%;
+  align-items: flex-start;
+}
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.socials a {
+  margin-right: 10px;
+  background-color: #f25f3a;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.footer-links {
+  display: flex;
+  gap: 60px;
+}
+.footer-links ul {
+  list-style: none;
+}
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+.newsletter input {
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  margin-right: 10px;
+}
+.btn-go {
+  padding: 10px 16px;
+  border-radius: 25px;
+  background-color: #f25f3a;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.side{
+  display: flex;
+  gap: 10px;
+}
+.mobile-menu-icon {
+      display: none;
+      font-size: 26px;
+      cursor: pointer;
+    }
+
+    .mobile-nav {
+      display: none;
+      flex-direction: column;
+      background-color: white;
+      padding: 20px;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .mobile-nav.active {
+      display: flex;
+    }
+
+    .mobile-nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .dropdown-menu li {
+      padding: 10px;
+      font-size: 14px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .content {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .button {
+    margin-top: 10px;
+  }
+
+  .first-text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image img {
+    padding: 0;
+    width: 100%;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  .first-text p {
+    font-size: 18px;
+  }
+
+  .text-two {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .space, .right {
+    padding: 0;
+    width: 100%;
+  }
+
+  .right {
+    padding-left: 0;
+  }
+
+  .side {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .testimonials {
+    padding: 30px 10px;
+  }
+
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .down {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .butt {
+    margin: 20px auto 0;
+    display: block;
+  }
+
+  .main-footer {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+   .newsletter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+   .newsletter input {
+    width: 100%;
+
+  }
+
+  .newsletter .btn-go {
+    width: 100%;
+  } 
+ .mobile-menu-icon {
+        display: block;
+        align-items: end;
+        justify-content: center;
+      } 
+
+
+}
+
+
+    </style>
+</head>
+<body>
+      <nav class="navbar">
+         <p class="mana"><strong>:: manager</strong></p>
+
+     <div class="content">
+         <p>pricing</p>
+         <p>product</p>
+         <p>About us</p>
+         <p>careers</p>
+         <p>community</p>
+       </div>
+        <button class="button">Get started 
+        </button>
+      </nav>
+
+    <div class="first-text">
+    <div>
+      <h3>
+        <span> Bring everyone </span><br>
+        
+         together to build better products.
+      </h3>
+
+     <p>
+          Manage make it simple for software teams to plan day-to-day tasks while keeping the lager team goals in veiw. 
+    </p>
+    
+    <button class="button">Get started
+    </button>
+</div>
+    
+    <div class="image">
+     <img src="/image/illustration-intro.svg" alt="">
+    </div>
+
+  </div> 
+
+  <div class="text-two">
+  <div class="space">
+<div>
+    <h2>
+      What's different about Manage?
+    </h2>
+
+    <p>
+      <span> Manage provides all the functionlity your team needs, without the complexity. our software is tailor-made for modern digital</span><br> product teams.
+    </p>
+</div>
+  </div>
+
+  <div class="right">
+  <div class="side">
+<button class="button-one">
+    01
+   </button>
+  <h4>
+    Track company-wide progress
+  </h4>
+  </div>
+  <div>
+  <p>
+    see how day-to day tasks fit into the wider vision Go from tracking progress at the milestone level all the way done to the smallest of details. Never lose sight of the bigger picture again.
+  </p>
+  </div>
+
+  <div class="side">
+   <button class="button-two">
+    02
+   </button>
+   <h4>
+  Advanced built-in reports
+   </h4>
+  </div>
+  <div>
+   <p>
+    set internal delivery estimates and track progress toward company goals. our customisable dashboard help you build out the reports you need to keep key stakeholders infomed. </p>
+   </div>
+
+   <div class="side">
+   <button class="button-three">
+    03
+   </button>
+     <h4>
+      Everything you need in one place
+     </h4>
+   </div>
+  <div>
+     <p>
+      stop jumping from one service to another to communicate, store files, track tasks and share documents. manage offers an all-in-one team productivity solution.
+     </p>
+   </div>
+  </div>
+  </div>
+  <section class="testimonials">
+  <h2>What they've said</h2>
+  <div class="testimonial-grid">
+    <div class="testimonial">
+      <img src="/image/avatar-anisha.png" alt="Anisha Li">
+      <h4>Anisha Li</h4>
+      <p>"Manager has supercharged our team's workflow. The maintain visibility on larger milestones at all times keeps everyone motivated."</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="/image/avatar-ali.png" alt="Ali Bravo">
+      <h4>Ali Bravo</h4>
+      <p>"We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused."</p>
+    </div>
+
+    <div class="testimonial">
+      <img src="/image/avatar-richard.png" alt="Richard Watts">
+      <h4>Richard Watts</h4>
+      <p>"Manage allows us to provide structure and product keeps us organised and focused. i can't stop recording them to everyone i talk to"</p>
+    </div>
+  </div>
+   <button class="button">Get Started</button>
+</section>
+  
+  <div class="down">
+   <span>simplify how your team </span> <br> works today.
+   <button class="butt">Get started</button>
+  </div>  
+    <!-- Footer -->
+  <footer class="main-footer">
+    <div class="footer-left">
+      <div class="logo">:: manage</div>
+      <div class="socials">
+        <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">About Us</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Careers</a></li>
+        <li><a href="#">Community</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="newsletter">
+      <input type="email" placeholder="Updates in your inbox…" />
+      <button class="btn-go">Go</button>
+      <p>2025 Manage. All rights res</p>
+    </div>
+  </footer>
+</body>
+</html>
+
+  
+
+
+
+
